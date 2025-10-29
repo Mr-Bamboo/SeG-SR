@@ -34,7 +34,7 @@ python segsr/train.py -opt options/train/train_SEGSR_SRx4_UCMerced.yml --auto_re
 ```
 python segsr/test.py -opt options/test/test_SEGSR_SRx4_UCMerced.yml
 ```
-The weight file (pth) for UCMerced has been released at the link below： [Google Drive]() 
+The weight file (pth) for UCMerced has been released at the link below： [Google Drive](https://drive.google.com/drive/folders/1p9Q_3_9doJieEmg5YC1gazxDYsHO2xtg?usp=sharing) 
 
 However, please note that we do not recommend using this weight file directly for performance reporting, since your dataset splits may differ from those used in our work. For performance reporting, we strongly suggest training the model yourself using the provided training scripts and then evaluating with the weights obtained from your own training process.
 
