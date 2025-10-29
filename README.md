@@ -26,18 +26,20 @@ python setup.py develop
 ### Train
 - Single GPU For Training:
 ```
-python segsr/train.py -opt options/train/train_SeGSR_SRx4_UCMerced.yml --auto_resume
+python segsr/train.py -opt options/train/train_SEGSR_SRx4_UCMerced.yml --auto_resume
 ```
 - The command for multi-GPU training is same as [HAT](https://github.com/XPixelGroup/HAT).
 
 ### Test
 ```
-python segsr/test.py -opt options/test/test_SeGSR_SRx4_UCMerced.yml
+python segsr/test.py -opt options/test/test_SEGSR_SRx4_UCMerced.yml
 ```
+The weight file (pth) for UCMerced has been released at the link below： [Google Drive]() 
 
+However, please note that we do not recommend using this weight file directly for performance reporting, since your dataset splits may differ from those used in our work. For performance reporting, we strongly suggest training the model yourself using the provided training scripts and then evaluating with the weights obtained from your own training process.
 
 ## Acknowledgments
-Our SeG-SR mainly borrows from [HAT](https://github.com/XPixelGroup/HAT) and [TTST](https://github.com/XY-boy/TTST). Thanks for these excellent open-source works!
+Our SeG-SR mainly borrows from [HAT](https://github.com/XPixelGroup/HAT), [CLIP](https://github.com/openai/CLIP/tree/main/clip) and [TTST](https://github.com/XY-boy/TTST). Thanks for these excellent open-source works!
 
 ## Contact
 If you have any questions or suggestions, feel free to contact me.  
